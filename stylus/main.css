@@ -60,8 +60,6 @@ body {
 .topnav {
   height: 100px;
   width: 100%;
-/*display flex
-	justify-content space-around*/
 }
 .topnav__item {
   position: relative;
@@ -98,19 +96,8 @@ body {
   bodrer: 0;
   top: 9px;
   right: 145px;
-/*margin-top 4px*/
   border-radius: 50%;
 }
-/*.leftnav > ul > li:not(:first-child)::before
-.rightnav > ul > li:not(:first-child)::before
-	position absolute
-	content ""
-	background #bcc1c4
-	width 4px
-	height 4px
-	bodrer 0
-	top 54px
-	border-radius 50%*/
 .leftnav > ul > li > a,
 .rightnav > ul > li > a {
   font-family: 'Montserrat', sans-serif;
@@ -242,7 +229,6 @@ body {
   font-style: italic;
   margin-top: 0px;
   margin-bottom: 0px;
-/*position relative*/
 }
 .page-title-text {
   font-family: Montserrat;
@@ -266,15 +252,9 @@ body {
   text-decoration: none;
 }
 .food-cards {
-/*top 500px
-	position relative*/
   max-width: 1170px;
 }
 .food-cards-wrapper {
-/*box-sizing border-box
-	position relative
-	max-width 1170px
-	margin 0 auto*/
   position: relative;
   top: 250px;
   margin: 0 auto;
@@ -448,8 +428,6 @@ body {
   border-radius: 2px;
   z-index: 1;
 }
-/*.foodmenu__title:after
-	content ""*/
 .foodmenu__special {
   position: absolute;
   background: #f1eded;
