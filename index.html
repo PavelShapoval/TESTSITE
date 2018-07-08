@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Michello - Restaurant</title>
+	<link rel="shortcut icon" href="img/icons/favicon.png"/>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" href="stylus/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="http://allfont.ru/allfont.css?fonts=droid-serif" rel="stylesheet" type="text/css" />
@@ -39,8 +42,8 @@
 	<nav class="topnav">
 		<div class="leftnav ">
 			<ul>
-				<li class="topnav__item"><a href="#">Home</a>
-					<ul class="sub1">
+				<li class="topnav__item"><a href="#" class="dropdown">Home</a>
+					<ul class="sub">
 						<li><a href="#">Home version 1</a></li>
 						<li><a href="#">Home version 2</a></li>
 					</ul>
@@ -53,16 +56,16 @@
 
 		<div class="rightnav">
 			<ul>	
-				<li class="topnav__item"><a href="#">Shop</a>
-					<ul class="sub2">
+				<li class="topnav__item"><a href="#" class="dropdown">Shop</a>
+					<ul class="sub">
 						<li><a href="#">Shop for delivery</a></li>
 						<li><a href="#">Shop for sale</a></li>
 						<li><a href="#">Simple poduct</a></li>
 					</ul>
 				</li>	
 				
-				<li class="topnav__item"><a href="#">About us</a>
-					<ul class="sub3">
+				<li class="topnav__item"><a href="#" class="dropdown">About</a>
+					<ul class="sub">
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">About us</a></li>
 						<li><a href="#">Contact us</a></li>
@@ -73,8 +76,8 @@
 					</ul>
 				</li>	
 				
-				<li class="topnav__item"><a href="#">Contact</a>
-					<ul class="sub3">
+				<li class="topnav__item"><a href="#" class="dropdown">Contact</a>
+					<ul class="sub">
 						<li><a href="#">Button</a></li>
 						<li><a href="#">Map</a></li>
 						<li><a href="#">Icon box</a></li>
@@ -127,7 +130,7 @@
 			</div>
 
 
-			<div class="contact-block-requis">
+			<div class="contact-block-requis-1">
 				<div class="contact-block-requis__phone">
 					<p class="contact-block-requis__call">
 						Call us for knew today's menu</p>
@@ -137,7 +140,7 @@
 				</div>
 			</div>
 			
-			<div class="contact-block-requis">	
+			<div class="contact-block-requis-2">	
 				<div class="contact-block-requis__chat">
 					<p class="contact-block-requis__call">
 						Or chat with us for knew today's menu</p>
@@ -147,7 +150,7 @@
 				</div>
 			</div>
 				
-			<div class="contact-block-requis">
+			<div class="contact-block-requis-3">
 				<div class="contact-block-requis__contact">
 					<p class="contact-block-requis__call contact-block-requis__call-indent">Or</p>
 					<input type="button" name="contactus" 
@@ -167,10 +170,10 @@
 			
 		<div class="filter">
 			<ul>
-				<li><a href="">Trending</a></li>
-				<li><a href="">Sales</a></li>
-				<li><a href="">Disscount</a></li>
-				<li><a href="">Votes</a></li>
+				<li><a href="#">Trending</a></li>
+				<li><a href="#">Sales</a></li>
+				<li><a href="#">Disscount</a></li>
+				<li><a href="#">Votes</a></li>
 			</ul>
 		</div>
 
@@ -178,7 +181,7 @@
 
 	<div class="foods-cards">
 		<div class="food-cards-wrapper">
-			<div class="food-cardsitem"> <!--таких делаем 8шт Первая.-->
+			<div class="food-cardsitem1"> <!--таких делаем 8шт Первая.-->
 				<img src="img/foodcards-items/min/drink-avocado-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Seafood Pizza</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -201,7 +204,7 @@
 
 			</div>
 
-			<div class="food-cardsitem"> <!--таких делаем 8шт Вторая.-->
+			<div class="food-cardsitem2"> <!--таких делаем 8шт Вторая.-->
 				<img src="img/foodcards-items/min/drink-berry-2-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Beef Rice</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -219,7 +222,7 @@
 			</div>
 
 
-			<div class="food-cardsitem"> <!--таких делаем 8шт. Третья-->
+			<div class="food-cardsitem3"> <!--таких делаем 8шт. Третья-->
 				<img src="img/foodcards-items/min/drink-berry-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Seafood Pasta</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -236,7 +239,7 @@
 			
 			</div>
 
-			<div class="food-cardsitem"> <!--таких делаем 8шт. Четвертая-->
+			<div class="food-cardsitem4"> <!--таких делаем 8шт. Четвертая-->
 				<img src="img/foodcards-items/min/food-ham-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Seafood Mixed Pasta</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -253,7 +256,7 @@
 			
 			</div>
 		
-			<div class="food-cardsitem"> <!--таких делаем 8шт. Пятая-->
+			<div class="food-cardsitem5"> <!--таких делаем 8шт. Пятая-->
 				<img src="img/foodcards-items/min/food-soup-2-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Seafood Pizza</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -272,7 +275,7 @@
 			
 			</div>
 
-			<div class="food-cardsitem"> <!--таких делаем 8шт. Шестая-->
+			<div class="food-cardsitem6"> <!--таких делаем 8шт. Шестая-->
 				<img src="img/foodcards-items/min/food-soup-3-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Beef Rice</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -289,7 +292,7 @@
 			
 			</div>
 
-			<div class="food-cardsitem"> <!--таких делаем 8шт. Седьмая-->
+			<div class="food-cardsitem7"> <!--таких делаем 8шт. Седьмая-->
 				<img src="img/foodcards-items/min/food-steak-2-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Seafood Pasta</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -306,7 +309,7 @@
 			
 			</div>
 
-			<div class="food-cardsitem"> <!--таких делаем 8шт. Восьмая-->
+			<div class="food-cardsitem8"> <!--таких делаем 8шт. Восьмая-->
 				<img src="img/foodcards-items/min/gallery_05-315x245.jpg" alt="food"/>
 				<h4 class="food-cardsitem__title">Seafood Mixed Pasta</h4>
 				<p class="food-cardsitem__desc">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
@@ -346,7 +349,7 @@
 		
 			
 		
-		<div class="block2-foodmenu">  <!--первый блок из 3х item Starter-->
+		<div class="block2-foodmenu1">  <!--первый блок из 3х item Starter-->
 			<h3 class="foodmenu-block-title">Starter</h3>
 			
 			<!--первый item-->
@@ -417,7 +420,7 @@
 
 		<!------------->
 		
-		<div class="block2-foodmenu">  <!--второй блок из 3х item Main course-->
+		<div class="block2-foodmenu2">  <!--второй блок из 3х item Main course-->
 			<h3 class="foodmenu-block-title">Main course</h3>
 			
 			<!--первый item-->
@@ -473,7 +476,7 @@
 
 
 
-		<div class="block2-foodmenu"> <!--третий блок из 2х item DESSERT-->
+		<div class="block2-foodmenu3"> <!--третий блок из 2х item DESSERT-->
 		
 			<h3 class="foodmenu-block-title">Dessert</h3>
 
@@ -513,7 +516,7 @@
 	
 		
 
-		<div class="block2-foodmenu"><!--четвертый блок из 2х item DRINK-->
+		<div class="block2-foodmenu4"><!--четвертый блок из 2х item DRINK-->
 		
 			<h3 class="foodmenu-block-title">Drink</h3>
 
@@ -574,7 +577,7 @@
 <div class="block3">
 	<div class="block3-wrapper">
 	
-	<div class="about-wrapper">
+	<div class="about-wrapper1">
 		<div class="about">
 			<p class="about__caption">About Us</p>
 			<img src="img/icons/main-logo.png" alt="mlogo" class="about__logo">
@@ -595,7 +598,7 @@
 	</div>
 
 
-	<div class="about-wrapper">
+	<div class="about-wrapper2">
 		<div class="about">
 			<p class="about__caption">Latest tweet</p>
 			
@@ -617,7 +620,7 @@
 		</div>
 	</div>
 	
-	<div class="about-wrapper">
+	<div class="about-wrapper3">
 		<div class="about">
 				
 			<p class="about__caption">instagram</p>
