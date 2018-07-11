@@ -8,10 +8,12 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" href="stylus/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
 	<link href="http://allfont.ru/allfont.css?fonts=droid-serif" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
+
 <header class="header">
 	<div class="topmenu">
 		
@@ -30,7 +32,7 @@
 			<ul>
 				<li>My Account</li>
 				<li>Login/Registr</li>
-				<li class="topmenu__cart"><img src="img/icons/cart.png" alt="cart"></li>
+				<li class="topmenu__cart topmenu__cart_hover"><img src="img/icons/cart.png" alt="cart"></li>
 			</ul>
 		</div>
 
@@ -384,8 +386,8 @@
 				
 
 				<p class="foodmenu__special">
-							<span class="alertblock">Special</span><br>
-							<span>Nam consequat dignissim 
+							<span class="alertblock__title">Special</span><br>
+							<span class="alertblock__text">Nam consequat dignissim 
 								sem, sed aliquet risus amy
 								dapibus vitae dor lor sit.</span>
 								</p>
@@ -400,15 +402,15 @@
 					
 					<div class="foodmenu-item__data">					
 						<p class="foodmenu-item__title">Russian Salad
-						<span class="foodmenu-item__price">$ 25.00</span></p>
+						<span class="foodmenu-item__price foodmenu-item__special-price">$ 25.00</span></p>
 					</div>
 				
 				<p class="foodmenu-item__desc">
 						Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
 				
 				<p class="foodmenu__details">
-						<span class="alertblock">Supplier Details</span><br>
-						<span>Pellentesque eget ullamcorper nisi. In arcu est, gravida nu
+						<span class="alertblock__title">Supplier Details</span><br>
+						<span class="alertblock__text">Pellentesque eget ullamcorper nisi. In arcu est, gravida nu
 						sit amet nibh in, malesuada tempor dolor. Nam dolor sit 
 						consequat dignissim sem, sed aliquet risus.</span>
 				</p>
@@ -443,8 +445,8 @@
 				<img src="img/foodmenu-items/food-steak-115x115.jpg" alt="foto" class="foodmenu-item__foto">
 					
 					<div class="foodmenu-item__data">					
-						<p class="foodmenu-item__title">Haemul Pajeon
-						<span class="foodmenu-item__price">$ 25.00</span></p>
+						<p class="foodmenu-item__title foodmenu-item__title-best">Haemul Pajeon
+						<span class="foodmenu-item__price foodmenu-item__bestchoise">$ 25.00</span></p>
 					</div>
 				
 				<p class="foodmenu-item__desc">
@@ -588,12 +590,22 @@
 		
 			<p class="about__caption">Opening Times</p>
 			
-			<p class="block3__blocktext">
-				<span class="days">Monday - Friday ..... 8.00 - 19.00</span><br>
-				<span class="days">Sunday - Saturday ..... 7.30 - 20.30</span><br>
-				<span class="events">Events ........... Everytimes!</span>
-			</p>
-		
+			<div class="block3-opening">
+					<div class="block3-opening__days">Monday - Friday
+						<span class="block3-opening__times"> 8.00 - 19.00</span>
+					</div>
+				
+					
+					<div class="block3-opening__days">Sunday - Saturday  
+						<span class="block3-opening__times">7.30 - 20.30</span>
+					</div>
+				
+
+					<div class="block3-opening__events">Events 
+						<span class="block3-opening__events-when">Everytimes!</span>
+					</div>
+			
+			</div>
 		</div>
 	</div>
 
@@ -643,15 +655,23 @@
 		
 		<div class="mainfoot__icons">
 			<ul>
-				<li><a href=""><img src="img/icons/social1.png" alt="ficon"></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+	
+			<!--	<li><a href=""><img src="img/icons/social1.png" alt="ficon"></a></li>
 				<li><a href=""><img src="img/icons/social2.png" alt="ficon"></a></li>
 				<li><a href=""><img src="img/icons/social3.png" alt="ficon"></a></li>
-				<li><a href=""><img src="img/icons/social4.png" alt="ficon"></a></li>
-			</ul>
-		
+				<li><a href=""><img src="img/icons/social4.png" alt="ficon"></a></li>-->
+
+
+
 		</div>
 	</div>
 
 </footer>	
+
 </body>
 </html>

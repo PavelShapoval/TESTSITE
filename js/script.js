@@ -6,7 +6,7 @@ $('document').ready(function(){
 
 
 
-
+/*-------------------Эффекты для меню----------------------------------------------------------*/
 
 	$('.topnav__item').hover(function(){
 
@@ -19,12 +19,24 @@ $('document').ready(function(){
 
 	});
 
+/*-----------------------------------------------------------------------------*/
+	$('.sub > li').hover(function(){
+
+		$(this).css("padding-left", "8px");
+
+	}, 
+	function(){
+
+		$(this).css("padding-left", "0px");
+
+	});
+
 
 
 
 });
 
-
+/*-----------------------------------------------------------------------------*/
 			/*эффекты для фильтра*/
 
 $('document').ready(function(){
@@ -54,34 +66,100 @@ $('document').ready(function(){
 
 $('document').ready(function(){
 
-	$('.food-cardsitem1, .food-cardsitem2, .food-cardsitem3, .food-cardsitem4, .food-cardsitem5, .food-cardsitem6, .food-cardsitem7, .food-cardsitem8 ').hover(
+
+
+/*-----------------------------------------------------------------------------*/
+
+	$('.food-cardsitem1, .food-cardsitem2, .food-cardsitem3, .food-cardsitem4, .food-cardsitem5, .food-cardsitem6, .food-cardsitem7, .food-cardsitem8').hover(function(){
+
+		$(this).find('.food-cardsitem__title, .food-cardsitem__desc, .food-cardsitem__customer, .food-cardsitem__star, .food-cardsitem__price').css({
+			"color":"#fff"
+		});
+
+	}, 
+	function(){
+
+		$(this).find('.food-cardsitem__title, .food-cardsitem__desc, .food-cardsitem__customer, .food-cardsitem__star, .food-cardsitem__price').css({
+			"color":"#918686"
+		});
+
+	});
+
+/*-------------------------------------------------------------------------------*/
+
+
+	$('.food-cardsitem1, .food-cardsitem2, .food-cardsitem3, .food-cardsitem4, .food-cardsitem5, .food-cardsitem6, .food-cardsitem7, .food-cardsitem8').hover(function(){
+
+		$(this).find('.food-cardsitem__btn1').css({
+			"border":"1px solid #fff",
+			"color":"#fff"
+		});
+
+	}, 
+	function(){
+
+		$(this).find('.food-cardsitem__btn1').css({
+			"border":"1px solid #918686",
+			"color":"#918686"
+		});
+
+	});
+
+/*-------------------------------------------------------------------------------*/
+
+	$('.food-cardsitem1, .food-cardsitem2, .food-cardsitem3, .food-cardsitem4, .food-cardsitem5, .food-cardsitem6, .food-cardsitem7, .food-cardsitem8').hover(function(){
+
+		$(this).find('.food-cardsitem__btn3').css({
+			"background":"#fff",
+			"color":"#918686"
+		});
+
+	}, 
+	function(){
+
+		$(this).find('.food-cardsitem__btn3').css({
+			"background":"#c55842",
+			"color":"#fff"
+		});
+
+	});
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+	$('.food-cardsitem__btn1').hover(
 
 		function(){
-			$('.food-cardsitem__title, .food-cardsitem__desc,.food-cardsitem__customer, .food-cardsitem__star, .food-cardsitem__price').css('color','#fff');
-			$('.food-cardsitem__btn1').css('border','1px solid #fff');
-			$('.food-cardsitem__btn1').css('color','#fff');
-			$('.food-cardsitem__btn3').css('background','#fff');
-			$('.food-cardsitem__btn3').css('color','#918686');
-	},
+			$(this).css("color", "#c55842")
 
-		function(){
-			$('.food-cardsitem__title').css('color','#6a6060');
-			$('.food-cardsitem__desc, .food-cardsitem__customer').css('color','#918686');
-			$('.food-cardsitem__price, .food-cardsitem__star').css('color','#c55842');
-			$('.food-cardsitem__btn1').css('border','1px solid #918686');
-			$('.food-cardsitem__btn1').css('color','#918686');
-			$('.food-cardsitem__btn3').css('background','#c55842');
-			$('.food-cardsitem__btn3').css('color','#fff');
+		}, function(){
+			$(this).css("color", "#fff")
 
 		}
+		)
+
+/*-------------------------------------------------------------------------------*/
+		
+		$('.topnav__item').hover(
+
+	function(){
+
+		$(this).addClass("topnav__item2");
+
+	}, 
+	function(){
+
+		$(this).removeClass("topnav__item2");
+
+	});
 
 
-	)
-
-
-
+/*-------------------------------------------------------------------------------*/
 
 	
+
 
 });
 
