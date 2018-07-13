@@ -114,13 +114,15 @@ body {
   display: inline-block;
   position: absolute;
   top: 0px;
-  left: 158px;
+/*left 158px*/
+  right: 58%;
 }
 .rightnav {
   display: inline-block;
   position: absolute;
   top: 0px;
-  right: 174px;
+/*right 174px*/
+  left: 57%;
 }
 .leftnav ul {
   padding-left: 0px;
