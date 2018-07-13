@@ -185,7 +185,6 @@ html, body
 
 
 
-
 	
 .topnav__item2:after
 	content ""
@@ -195,13 +194,38 @@ html, body
 	position absolute
 	right 48%
 	top 42px
-	transition 0.2s all
+	/*transition 0.2s all*/
 	transform scaleX(7)
-	
+
+/*ниже закомментирован эффект плавного подчеркивания, но сделан криво, поэтому остался в комментарии*/
 
 	
-	
+/*.topnav__item2 a:after
+	content ""
+	width 0px
+	height 3px
+	background #c55842
+	position absolute
+	top 26px
+	display block
+	-webkit-transition width .2s ease-in-out;
+	right 50%
+.topnav__item2 a:before
+	content ""
+	width 0px
+	height 3px
+	background #c55842
+	position absolute
+	top 26px
+	left 50%
+	display block
+	-webkit-transition width .2s ease-in-out;
 
+
+.topnav__item2 a:hover:before	
+.topnav__item2 a:hover:focus	
+.topnav__item2 a:hover:after
+	width 14px*/
 
 	
 .leftnav > ul > li > a
